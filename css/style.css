@@ -1,0 +1,49 @@
+
+/*these two following blocks could be used to style the background countries of the
+ NorthAmerica,but not used here for the choropleth map*/
+.background {
+	fill: #5EB3F5;
+	opacity: 0.2;
+	stroke:#0E78CA;
+	stroke-width:1px;
+}
+.states {
+	fill: #358C17;
+	opacity: 0;
+	stroke:#B2C6AB;
+	stroke-width:1px;
+}
+/* these two blocks of codes stylize the graticule lines, but ot used here for a choropleth map*/
+.gratLines {
+	fill:none;
+	stroke:#8EBBDE;
+	stroke-width:1.2px;
+}
+
+.gratBackground {
+	fill:#C6E1F6;
+	opacity:0.7;
+}
+/*style the color, border and position of the svg*/
+.map {
+	border: medium solid #D4E6F1;
+	border-width: 5px;
+	background-color: #D6EAF8;
+	padding: 10px;
+	position: relative;
+	
+}
+/*style the path of states within the svg*/
+path{
+	fill:#5493bc;
+	stroke:white;
+	stroke-opacity:1;
+	stroke-width:0.6px;
+	position: relative;
+	x:100px;
+	y:100px;
+
+}
+
+
+
