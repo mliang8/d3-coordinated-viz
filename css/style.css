@@ -1,37 +1,75 @@
 
 /*these two following blocks could be used to style the background countries of the
  NorthAmerica,but not used here for the choropleth map*/
+
+/*aligning the two svgs conatining map and chart*/
+body {
+	display: inline-block;
+}
+/*stylize the map background*/
 .background {
 	fill: #5EB3F5;
 	opacity: 0.2;
 	stroke:#0E78CA;
 	stroke-width:1px;
 }
+/*this stylizing hides the background data that is not used to display on the map*/
 .states {
 	fill: #358C17;
 	opacity: 0;
-	stroke:#B2C6AB;
+	stroke:#000;
 	stroke-width:1px;
 }
-/* these two blocks of codes stylize the graticule lines, but ot used here for a choropleth map*/
-.gratLines {
-	fill:none;
-	stroke:#8EBBDE;
-	stroke-width:1.2px;
-}
 
-.gratBackground {
-	fill:#C6E1F6;
-	opacity:0.7;
-}
 /*style the color, border and position of the svg*/
 .map {
 	border: medium solid #D4E6F1;
 	border-width: 5px;
 	background-color: #D6EAF8;
-	padding: 10px;
+	margin: 10px 0 0 20px;
 	position: relative;
 	
+}
+/*stylize the margin and the backgournd of the bar chart*/
+.chart {
+	background-color: #d6eaf8;
+	border: medium solid #D4E6F1;
+	border-width: 5px;
+	float: left;
+	margin: 10px 20px 0 20px;
+	
+}
+/*stylize the title of the bar chart*/
+.chartTitle {
+	fill:#4d5c66;
+	font-family: sans-serif;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+/*stylize the background of the chart */
+.chartBackground{
+	fill: #d6eaf8;
+}
+/*add a chart frame beneath the bar charts*/
+.chartFrame{
+	fill: none;
+	stroke:#9ea9b2;
+	stroke-width:1px;
+	shape-rendering: crispEdges;
+}
+/*stylize the vertical axis*/
+.axis path,
+.axis line{
+	fill: none;
+	stroke: #9ea9b2;
+	stroke-width: 1px;
+	shape-rendering:crispEdges;
+}
+/* stylize the axis texts*/
+.axis text {
+	font-family: sans-serif;
+	font-size: 1.1em;
+	fill:#4d5c66;
 }
 /*style the path of states within the svg*/
 path{
@@ -39,11 +77,11 @@ path{
 	stroke:white;
 	stroke-opacity:1;
 	stroke-width:0.6px;
-	position: relative;
-	x:100px;
-	y:100px;
+	stroke-cap:round;
 
 }
+
+
 
 
 
